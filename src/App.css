@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background: url(ncaa_ohio_state_buckeyes_wordmark_white.png) no-repeat center center fixed;
+}
