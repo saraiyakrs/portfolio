@@ -23,7 +23,7 @@ import {
     AssignmentInd,
     Home,
     Apps,
-    ContactMail
+    //ContactMail
 } from "@material-ui/icons";
 
 // CSS STYLES
@@ -63,11 +63,11 @@ const menuItems = [
         listPath: "/portfolio"
         
     },
-    {
-        listIcon: <ContactMail />,
-        listText: "Contacts",
-        listPath: "/contacts"
-    }
+    // {
+    //     listIcon: <ContactMail />,
+    //     listText: "Contacts",
+    //     listPath: "/contacts"
+    // }
 ];
 
 
