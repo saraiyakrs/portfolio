@@ -79,12 +79,12 @@ const Portfolio = () => {
                             Portfolio Project (This Project) 
                         </Typography>
                         <Typography gutterBottom variant="body2" color = "textSecondary" component = "p">
-                           Developed a Web App displaying personal information and coding experiences
+                           Developed a Web App displaying personal information, resume, and various projects.
                         </Typography>
                         </CardContent>
                         <CardActions>
                         <Button size="small" color="primary">
-                            Github Repository
+                        <a href="https://github.com/saraiyakrs/portfolio" target="_blank">Github Repository</a>
                         </Button>
                         </CardActions>
                     </CardActionArea>
