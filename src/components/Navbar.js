@@ -3,6 +3,7 @@ import {Link} from "react-router-dom"
 import { makeStyles } from "@material-ui/core/styles";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
 import Footer from './Footer';
+import ohiostate from "../ohiostate.png";
 
 import {
     AppBar,
@@ -86,7 +87,7 @@ const Navbar = () => {
             className={classes.menuSliderContainer}
             component="div"
             onClick = {toggleSlider(slider, false)}>
-            <Avatar className={classes.avatar} src="avatar.png" alt="Krishna Saraiya" />
+            <Avatar className={classes.avatar} src={ohiostate} alt="Maurice" />
             <Divider />
             <List>
                 {menuItems.map((lsItem, key) => (
@@ -109,7 +110,7 @@ const Navbar = () => {
                             <ArrowBack style={{ color: "tomato" }} />
                         </IconButton>
                         <Typography variant="h5" style={{ color: "tan" }}>
-                            Portfolio
+                            Navigation Bar
                         </Typography>
                         <MobileRightMenuSlider anchor="right" open={state.right} onClose={toggleSlider("right", false)}
                         >

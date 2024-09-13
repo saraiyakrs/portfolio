@@ -2,6 +2,7 @@ import React from 'react';
 import {makeStyles} from "@material-ui/core/styles";
 import {Typography, Box} from "@material-ui/core";
 import Navbar from './Navbar';
+import ResumePDF from '../Krishna-Saraiya-Resume-Sept082024.pdf';
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
@@ -115,71 +116,20 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <>
-   <Navbar/>
-   <Box component="header" className = {classes.mainContainer}>
-      <Typography variant="h4" align="center" className = {classes.heading}>
-        Coding Experiences
-      </Typography>
-   
-   <Box component = "div" className = {classes.timeLine}>
-      <Typography variant="h2" className = {`${classes.timeLineYear} ${classes.timeLineItem}`}>
-        2013
-      </Typography>
-      <Box component = "div" className = {classes.timeLineItem}>
-        <Typography variant="h5" align="center" className = {classes.subHeading}>
-          web design
-        </Typography>
-        <Typography variant="body1" align="center" style = {{color:"tomato"}}>
-          company name where worked
-        </Typography>
-        <Typography variant="subtitle1" align="center" style = {{color: "tan"}}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-        </Typography>
-      </Box>
-      <Typography variant="h2" className = {`${classes.timeLineYear} ${classes.timeLineItem}`}>
-        2014
-      </Typography>
-      <Box component = "div" className = {classes.timeLineItem}>
-        <Typography variant="h5" align="center" className = {classes.subHeading}>
-          web development
-        </Typography>
-        <Typography variant="body1" align="center" style = {{color:"tomato"}}>
-          company name where worked
-        </Typography>
-        <Typography variant="subtitle1" align="center" style = {{color: "tan"}}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-        </Typography>
-      </Box>
-      <Typography variant="h2" className = {`${classes.timeLineYear} ${classes.timeLineItem}`}>
-        2015
-      </Typography>
-      <Box component = "div" className = {classes.timeLineItem}>
-        <Typography variant="h5" align="center" className = {classes.subHeading}>
-          web development
-        </Typography>
-        <Typography variant="body1" align="center" style = {{color:"tomato"}}>
-          company name where worked
-        </Typography>
-        <Typography variant="subtitle1" align="center" style = {{color: "tan"}}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-        </Typography>
-      </Box>
-      <Typography variant="h2" className = {`${classes.timeLineYear} ${classes.timeLineItem}`}>
-        2016
-      </Typography>
-      <Box component = "div" className = {classes.timeLineItem}>
-        <Typography variant="h5" align="center" className = {classes.subHeading}>
-          web development
-        </Typography>
-        <Typography variant="body1" align="center" style = {{color:"tomato"}}>
-          company name where worked
-        </Typography>
-        <Typography variant="subtitle1" align="center" style = {{color: "tan"}}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-        </Typography>
-      </Box>
-   </Box>
-   </Box>
+   <Navbar/> 
+    {/* Add Embedded Resume PDF Here */}
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resume</title>
+      </head>
+      <body>
+        <embed src={ResumePDF} width="100%" height="1000px" />
+      </body>
+    </html>
+
     </>
   );
 };

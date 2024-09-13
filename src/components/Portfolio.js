@@ -12,7 +12,9 @@ import {
     Typography
 } from '@material-ui/core';
 import Navbar from './Navbar';
-import project1 from '../htmlcssjs-overview.png';
+import project1 from '../toceWebsite.png';
+import project2 from '../portfolioimg.png';
+import def from '../htmlcssjs-overview.png';
 
 const useStyles = makeStyles({
     mainContainer: {
@@ -27,6 +29,7 @@ const useStyles = makeStyles({
     }
 
 })
+
 
 
 const Portfolio = () => {
@@ -47,20 +50,15 @@ const Portfolio = () => {
                         />
                         <CardContent>
                         <Typography gutterBottom variant="h5">
-                            Project 0
+                            Touch of Class Events Web App - Convention Center Site
                         </Typography>
                         <Typography gutterBottom variant="body2" color = "textSecondary" component = "p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam, voluptatum.
-
+                        Developed with team a web application to serve as their online reservation system for the new event center.
                         </Typography>
                         </CardContent>
                         <CardActions>
                         <Button size="small" color="primary">
-                            Share
-                        </Button>
-                        <Button size="small" color="primary">
-                            Live Demo
+                        <a href="https://github.com/saraiyakrs/TOCE-National-Web-App-Team" target="_blank">Github Repository</a>
                         </Button>
                         </CardActions>
                     </CardActionArea>
@@ -74,29 +72,56 @@ const Portfolio = () => {
                         component="img"
                         alt="Project 1"
                         height="140"
-                        image={project1}
+                        image={project2}
                         />
                         <CardContent>
                         <Typography gutterBottom variant="h5">
-                            Project 
+                            Portfolio Project (This Project) 
                         </Typography>
                         <Typography gutterBottom variant="body2" color = "textSecondary" component = "p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam, voluptatum.
-
+                           Developed a Web App displaying personal information and coding experiences
                         </Typography>
                         </CardContent>
                         <CardActions>
                         <Button size="small" color="primary">
-                            Share
-                        </Button>
-                        <Button size="small" color="primary">
-                            Live Demo
+                            Github Repository
                         </Button>
                         </CardActions>
                     </CardActionArea>
                 </Card>
                 </Grid>
+    
+             </Grid>
+             <Grid container justify="center">
+                {/* Project 1 */}
+                <Grid item xs={12} sm={8} md={6}>
+                <Card className = {classes.cardContainer}>
+                    <CardActionArea>
+                        <CardMedia
+                        component="img"
+                        alt="Project 1"
+                        height="140"
+                        image={def}
+                        />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5">
+                            Project ???
+                        </Typography>
+                        <Typography gutterBottom variant="body2" color = "textSecondary" component = "p">
+                            To be Added..
+
+                        </Typography>
+                        </CardContent>
+                        <CardActions>
+                        <Button size="small" color="primary">
+                            Github Repository
+                        </Button>
+                       
+                        </CardActions>
+                    </CardActionArea>
+                </Card>
+            </Grid>
+            
     
              </Grid>
         </Box>

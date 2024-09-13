@@ -44,12 +44,11 @@ const Header = () => {
             </Typography>
             <br/>
             <Typography className = {classes.title} variant = "h5">
-                <Typed strings={["Computer Science and Engineering"]} typeSpeed={40} />
+                <Typed strings={["The Ohio State University"]} typeSpeed={40} />
             </Typography>
             <br/>
-            <Typography className = {classes.subtitle} variant = "h5">
-                <Typed strings={["The Ohio State University"]} typeSpeed={40} backSpeed={60} loop />
-            </Typography>
+            <h1>Computer Science and Engineering Student</h1>
+            <h2>Seeking internship from Early May to Early August 2025</h2>
         </Box>
     );
 };
